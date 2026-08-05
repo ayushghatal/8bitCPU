@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "compilationGroups": [
+    {
+      "language": "VHDL",
+      "library": "work",
+      "resources": [
+        {
+          "path": "/home/ayushsg/Projects/8bitCPU/src/cpu.vhd",
+          "hdlVersion": "VHDL 2019",
+          "kind": "COMPILE_FILE"
+        },
+        {
+          "path": "/home/ayushsg/Projects/8bitCPU/src/modules/alu.vhd",
+          "hdlVersion": "VHDL 2019",
+          "kind": "COMPILE_FILE"
+        }
+      ],
+      "overrideDirectives": {},
+      "undefineMacroNames": [],
+      "includePaths": [],
+      "includeFallbackToLocalDirectory": false,
+      "additionalEnvironmentVariables": {},
+      "libraryResourcesConfig": null,
+      "currentWorkingDirectory": "/home/ayushsg/Projects/8bitCPU",
+      "inferOrder": true,
+      "inferLibrary": false,
+      "allowUndefineInitialDefine": false,
+      "allowUndefineAllInitialDefine": false,
+      "conditionalVariables": {},
+      "target": {
+        "project": "8bitCPU",
+        "version": "default",
+        "target": "rtl"
+      },
+      "shouldBeValidated": true
+    }
+  ]
+}
