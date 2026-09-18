@@ -6,6 +6,8 @@ entity PC is
         count_en: in STD_LOGIC;
         clk: in STD_LOGIC;
         reset: in STD_LOGIC;
+        load: in STD_LOGIC;
+        addr_in: in STD_LOGIC_VECTOR(7 downto 0);
 
         count: out STD_LOGIC_VECTOR(7 downto 0)
     );
@@ -17,6 +19,8 @@ architecture Behavioral of PC is
         begin
             if reset = '1' then
                 count <= (others => '0');
+            elsif load = '1' then
+                count <= addr_in;
             elsif count_en = '1' then
                 count <= std_logic_vector(unsigned(count) + 1);
             end if;
